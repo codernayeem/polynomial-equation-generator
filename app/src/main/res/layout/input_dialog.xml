@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/dialog_ed_x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_x"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <EditText
+        android:id="@+id/dialog_ed_y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/output_y"
+        android:ems="10"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/dialog_bt_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:textColor="@color/teal_700"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/dialog_bt_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:textColor="@color/teal_700" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Appearance">
+
+        <ListPreference
+            android:title="Decimal place"
+            android:defaultValue="4"
+            android:key="dec_place"
+            android:entries="@array/dec_list"
+            android:entryValues="@array/dec_list"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="About">
+
+        <Preference
+            android:title="App Version"
+            android:summary="1.0"
+            android:icon="@mipmap/ic_launcher_round"/>
+
+        <Preference android:title="Find me on Github (@codernayeem)">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/codernayeem" />
+        </Preference>
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
